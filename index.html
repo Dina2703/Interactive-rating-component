@@ -20,35 +20,41 @@
     <!-- Rating state start -->
 
     <div class="container">
-      <div class="image-wrapper flex">
-        <img src="./images/icon-star.svg" alt="" />
+      <div id="main">
+        <div class="image-wrapper flex">
+          <img src="./images/icon-star.svg" alt="" />
+        </div>
+        <h3>How did we do?</h3>
+        <p>
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <div class="rating">
+          <ul class="flex">
+            <li class="item">1</li>
+            <li class="item">2</li>
+            <li class="item">3</li>
+            <li class="item">4</li>
+            <li class="item">5</li>
+          </ul>
+        </div>
+        <button id="btn">Submit</button>
       </div>
-      <h3>How did we do?</h3>
-      <p>
-        Please let us know how we did with your support request. All feedback is
-        appreciated to help us improve our offering!
-      </p>
-      <div class="rating">
-        <ul class="flex">
-          <li class="item">1</li>
-          <li class="item">2</li>
-          <li class="item">3</li>
-          <li class="item">4</li>
-          <li class="item">5</li>
-        </ul>
+      <div id="thanks ">
+        <div class="flex flex-col">
+          <div class="thanks-img">
+            <img src="./images/illustration-thank-you.svg" alt="" />
+          </div>
+          <div class="rate-info">You selected 4 out of 5</div>
+          <div class="thank-you">Thank you!</div>
+          <p class="thanks-text">
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don't hesitate to get in touch!
+          </p>
+        </div>
       </div>
-      <button id="btn">Submit</button>
     </div>
-    <!-- Rating state end -->
 
-    <!-- Thank you state start -->
-
-    <!-- Add rating here -->
-    <!-- You selected -->
-    <!-- out of 5 Thank you! We appreciate you taking the time to give a rating. If
-    you ever need more support, don’t hesitate to get in touch! -->
-
-    <!-- Thank you state end -->
     <script>
       const elements = document.getElementsByClassName("item");
 

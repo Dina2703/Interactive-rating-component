@@ -52,7 +52,7 @@ h3 {
   border-radius: 22px;
   margin: auto;
   margin-top: 200px;
-  padding: 1.4rem;
+  padding: 1.3rem;
 }
 
 .image-wrapper {
@@ -125,4 +125,47 @@ button:hover {
 .selected {
   background: rgb(167, 153, 153) !important;
   color: white;
+}
+
+/* Thank you */
+
+#main {
+  display: none;
+}
+
+#thanks {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.thanks-img {
+  width: 100px;
+  height: auto;
+  margin: 18px auto;
+}
+
+.thanks-img img {
+  width: 100%;
+}
+
+.rate-info {
+  background: rgba(87, 87, 87, 0.186);
+  color: var(--primary-orange);
+  font-size: 10px;
+  padding: 5px 13px;
+  border-radius: 20px;
+  margin: 3px auto 10px;
+}
+
+.thanks-text {
+  color: var(--light-gray);
+  text-align: center;
+  font-size: 11px !important;
+}
+
+.thank-you {
+  color: white;
+  font-size: larger;
+  margin-top: 1rem;
 }
