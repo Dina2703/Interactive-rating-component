@@ -30,14 +30,14 @@
       </p>
       <div class="rating">
         <ul class="flex">
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>4</li>
-          <li>5</li>
+          <li class="item">1</li>
+          <li class="item">2</li>
+          <li class="item">3</li>
+          <li class="item">4</li>
+          <li class="item">5</li>
         </ul>
       </div>
-      <button>Submit</button>
+      <button id="btn">Submit</button>
     </div>
     <!-- Rating state end -->
 
@@ -49,5 +49,19 @@
     you ever need more support, don’t hesitate to get in touch! -->
 
     <!-- Thank you state end -->
+    <script>
+      const btn = document.getElementById("btn");
+      btn.addEventListener("click", () => {
+        console.log("clicked");
+      });
+
+      const items = document.getElementsByClassName("item");
+
+      for (let i = 0; i < items.length; i++) {
+        items[i].addEventListener("click", (e) => {
+          e.target.classList.toggle("selected");
+        });
+      }
+    </script>
   </body>
 </html>

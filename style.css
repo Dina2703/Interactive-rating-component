@@ -52,7 +52,7 @@ h3 {
   border-radius: 22px;
   margin: auto;
   margin-top: 200px;
-  padding: 1.2rem;
+  padding: 1.4rem;
 }
 
 .image-wrapper {
@@ -120,4 +120,9 @@ button {
 button:hover {
   background: white;
   color: var(--primary-orange);
+}
+
+.selected {
+  background: rgb(167, 153, 153) !important;
+  color: white;
 }
