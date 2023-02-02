@@ -23,6 +23,7 @@
       <div id="main">
         <div class="image-wrapper flex">
           <img src="./images/icon-star.svg" alt="" />
+          <div class="tooltext">Please, rate us</div>
         </div>
         <h3>How did we do?</h3>
         <p>
@@ -81,11 +82,20 @@
       const main = document.querySelector("#main");
       const thanks = document.querySelector("#thanks");
       const rating = document.querySelector("#rating");
+      const tool = document.querySelector(".tooltext");
+
       btn.addEventListener("click", () => {
-        console.log("clicked");
-        main.style.display = "none";
-        thanks.style.display = "flex";
-        rating.innerText = selectedRating ? selectedRating : "0";
+        if (selectedRating) {
+          console.log("clicked");
+          main.style.display = "none";
+          thanks.style.display = "flex";
+          rating.innerText = selectedRating ? selectedRating : "0";
+        } else {
+          tool.style.display = "block";
+          setTimeout(() => {
+            tool.style.display = "none";
+          }, 2000);
+        }
       });
     </script>
   </body>
