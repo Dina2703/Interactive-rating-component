@@ -40,12 +40,14 @@
         </div>
         <button id="btn">Submit</button>
       </div>
-      <div id="thanks ">
+      <div id="thanks">
         <div class="flex flex-col">
           <div class="thanks-img">
             <img src="./images/illustration-thank-you.svg" alt="" />
           </div>
-          <div class="rate-info">You selected 4 out of 5</div>
+          <div class="rate-info">
+            You selected <span id="rating">0</span> out of 5
+          </div>
           <div class="thank-you">Thank you!</div>
           <p class="thanks-text">
             We appreciate you taking the time to give a rating. If you ever need
@@ -74,10 +76,16 @@
         });
       });
 
-      //
+      //thanks block
       const btn = document.getElementById("btn");
+      const main = document.querySelector("#main");
+      const thanks = document.querySelector("#thanks");
+      const rating = document.querySelector("#rating");
       btn.addEventListener("click", () => {
         console.log("clicked");
+        main.style.display = "none";
+        thanks.style.display = "flex";
+        rating.innerText = selectedRating ? selectedRating : "0";
       });
     </script>
   </body>

@@ -48,6 +48,7 @@ h3 {
 
 .container {
   width: 240px;
+  height: 270px;
   background-color: var(--dark-blue);
   border-radius: 22px;
   margin: auto;
@@ -129,12 +130,8 @@ button:hover {
 
 /* Thank you */
 
-#main {
-  display: none;
-}
-
 #thanks {
-  display: block;
+  display: none;
   justify-content: center;
   align-items: center;
 }
