@@ -50,18 +50,29 @@
 
     <!-- Thank you state end -->
     <script>
+      const elements = document.getElementsByClassName("item");
+
+      //convert a 'HTMLCollection' to an array type
+      const items = [...elements];
+      // console.log(items);
+      let selectedRating;
+      items.forEach((item, i) => {
+        item.addEventListener("click", (e) => {
+          //handle click
+          items.forEach((item) => {
+            item.classList.remove("selected");
+          });
+
+          e.target.classList.toggle("selected");
+          selectedRating = item.innerText;
+        });
+      });
+
+      //
       const btn = document.getElementById("btn");
       btn.addEventListener("click", () => {
         console.log("clicked");
       });
-
-      const items = document.getElementsByClassName("item");
-
-      for (let i = 0; i < items.length; i++) {
-        items[i].addEventListener("click", (e) => {
-          e.target.classList.toggle("selected");
-        });
-      }
     </script>
   </body>
 </html>
